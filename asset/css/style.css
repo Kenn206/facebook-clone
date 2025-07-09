@@ -1,0 +1,160 @@
+:root {
+  --color-input: #333334;
+  --placeholder-color: rgb(197, 197, 197);
+  --bg-color: #252728;
+  --bg-color-body: #1C1C1D;
+  --bg-color-hover: #3B3D3E;
+  --text-color: #E5E8EB;
+}
+.custom-font-size {
+    font-size: 0.9rem;
+}
+.custom-text-copyright {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: gray;
+}
+.custom-text-copyright:hover {
+    border-bottom: 1px solid gray;
+}
+.style-body {
+    background-color: var(--bg-color-body);
+}
+/* phần navbar__container */
+
+.bg-nav {
+  background-color: var(--bg-color);
+}
+
+/* phần left của navbar */
+
+.img-logo {
+  width: 40px;
+}
+.form {
+    position: relative;
+}
+.bg-input-search {
+    width: 240px;
+    height: 40px;
+    background-color: var(--color-input);
+    border: none;
+    color: white;
+}
+.bg-input-search:focus {
+    border: 2px solid #0A58CA;
+    outline: none;
+    caret-color: white;
+}
+.bg-input-search::placeholder {
+    color: var(--placeholder-color);
+}
+.bi-search {
+    position: absolute;
+    color: white;
+    top: 5px;
+    right: 20px;
+    color: var(--placeholder-color);
+}
+
+/* Phần navbar ở giữa */
+
+.nav-item {
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+.nav-item:hover {
+    background-color: var(--bg-color-hover);
+}
+.custom-text-icon {
+    color: var(--placeholder-color);
+}
+/* phần right của navbar */
+
+.custom-icon-navbar {
+    background-color: var(--color-input);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+}
+.custom-menu-settings .custom-icon-navbar {
+    width: 40px;
+    height: 40px;
+}
+.custom-icon-navbar:hover {
+    background-color: var(--bg-color-hover);
+}
+.custom-badge {
+    background-color: var(--color-input);
+    width: 20px;
+    height: 20px;
+    border-radius: 50% !important;
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    box-shadow: 0 0 10px gray;
+    user-select: none;
+}
+.custom-badge-messages {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50% !important;
+    position: absolute;
+    right: -2px;
+    user-select: none;
+}
+.custom-link {
+    color: var(--text-color) !important;
+}
+button.custom-bg-button {
+    background-color: var(--color-input);
+    border: none;
+}
+/* modal drop menu ở avatar */
+
+.modal-dropdown-avatar {
+    background-color: var(--bg-color);
+    padding: 20px;
+}
+div.custom-menu-avatar {
+    width: 360px;
+}
+.menu-avatar__container {
+    box-shadow: 0 0 10px rgb(48, 48, 48);
+    border-radius: 5px;
+    padding: 10px;
+}
+.custom-dropdown {
+    background-color: var(--bg-color) !important;
+    padding: 20px !important;
+}
+a.custom-menu-settings {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+a.custom-menu-settings:hover {
+    background-color: var(--bg-color-hover);
+}
+.custom-center {
+    width: 680px !important;
+    margin: 0 auto;
+}
+.custom-width {
+    width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px rgb(36, 36, 36);
+}
+.modal-seeAllProfiles {
+    background-color: #152127;
+    border-radius: 20px;
+}
+.content-modal-seeAllProfiles {
+    background-color: #1c2c35;
+    border-radius: 10px;
+    padding: 10px;
+}

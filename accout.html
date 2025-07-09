@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Create an account or log into Facebook. Connect with friends, family and other people you know. Share photos and videos, send messages and get updates.">
+    <title>Trang cá nhân</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/accout.css">
+    <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+    <script src="asset/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" href="asset/image/2023_Facebook_icon.svg.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="style-body">
+    <nav class="position-sticky top-0 z-1">
+        <div class="container-fluid">
+            <div class="row bg-nav">
+            <div class="col-md-3 d-flex align-items-center">
+                <a href="index.html"><img src="asset/image/2023_Facebook_icon.svg.png" title="Trang Chủ" class="img-logo m-2" style="cursor: pointer;"></a>
+                <form class="form d-none d-xxl-block">
+                    <i class="bi bi-search fs-5 d-xxl-block"></i>
+                    <input type="search" class="rounded-5 bg-input-search ps-3" placeholder="Search Facebook">
+                </form>
+            </div>
+            <div class="col-md-4 custom-center">
+                <div class="nav">
+                    <ul class="navbar d-flex justify-content-around w-100 align-items-center m-0 p-0">
+                        <li class="nav-item border-3 list-unstyled border-bottom border-primary active" title="Trang chủ"><a href="#" class="nav-link ms-4 me-4"><i class="bi bi-house-door-fill fs-3"></i></a></li>
+                        <li class="nav-item border-3 list-unstyled" title="Video"><a href="#" class="nav-link ms-4 me-4"><i class="bi-play-btn-fill custom-text-icon fs-3"></i></a></li>
+                        <li class="nav-item border-3 list-unstyled" title="Shop"><a href="#" class="nav-link ms-4 me-4"><i class="bi bi-shop fs-3 custom-text-icon"></i></a></li>
+                        <li class="nav-item border-3 list-unstyled" title="Groups"><a href="#" class="nav-link ms-4 me-4"><i class="bi bi-people-fill fs-3 custom-text-icon"></i></a></li>
+                        <li class="nav-item border-3 list-unstyled" title="Games"><a href="#" class="nav-link ms-4 me-4"><i class="bi bi-controller fs-3 custom-text-icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex align-items-center justify-content-end">
+                <!-- phần dropdown icon 3x3 -->
+                <i class="bi bi-grid-3x3-gap-fill fs-4 text-light custom-icon-navbar" style="cursor: pointer;" title="Menu">
+
+                </i>
+                <div class="messages custom-icon-navbar position-relative">
+                    <!-- phần dropdown icon messages -->
+                    <i class="bi bi-messenger fs-4 text-light" style="cursor: pointer;" title="Messages">
+
+                    </i>
+                    <span class="badge custom-badge-messages p-1">9+</span>
+                </div>
+
+                <!-- phần dropdown thông báo -->
+
+                <div class="dropdown user-select-none">
+                    <div class="d-flex justify-content-center custom-icon-navbar" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell-fill fs-4 text-light" style="cursor: pointer;" title="Notifications"></i>
+                    </div>
+                    <div class="dropdown-menu custom-dropdown shadow-lg">
+                        <div class="menu-avatar custom-menu-avatar">
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span class="text-light fs-4 fw-bold">Notifications</span>
+                                <button class="custom-btn-three-dots-notifications"><i class="bi bi-three-dots"></i></button>
+                            </p>
+                            <ul class="nav mt-2 mb-2">
+                                <li class="nav-item rounded-5 me-2 bg-primary"><a href="#" class="active nav-link custom-link">All</a></li>
+                                <li class="nav-item rounded-5"><a href="#" class="nav-link custom-link">Unread</a></li>
+                            </ul>
+                            <p class="d-flex justify-content-between align-items-center">
+                                <span class="text-light fw-medium">Friends requests</span>
+                                <a href="#" class="text-decoration-none">See all</a>
+                            </p>
+                            <div class="menu-avatar__container menu-avatar__container-hover mt-2">
+                                <div class="d-flex">
+                                    <div class="position-relative">
+                                        <img src="asset/image/avatar.png" alt="" width="60px" class="rounded-circle">
+                                        <i class="bi bi-person-circle text-primary" style="font-size: 24px;"></i>
+                                    </div>
+                                    <div class="w-75 ms-2">
+                                        <span class="text-light"><strong>Nhật Minh</strong> send you a friend request.</span>
+                                        <div class="pt-1 pb-1 custom-font-size">
+                                            <span class="text-light">1 mutual friend</span>
+                                        </div>
+                                        <div class="box-btn">
+                                            <button class="btn btn-primary">Confirm</button>
+                                            <button class="btn btn-secondary">Delete</button>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative d-flex align-items-center">
+                                        <div class="badge position-absolute bg-primary rounded-circle" style="width: 10px; height: 15px;"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="menu-avatar__container menu-avatar__container-hover mt-2">
+                                <div class="d-flex">
+                                    <div class="position-relative">
+                                        <img src="asset/image/avatar.png" alt="" width="60px" class="rounded-circle">
+                                        <i class="bi bi-person-circle text-primary" style="font-size: 24px;"></i>
+                                    </div>
+                                    <div class="w-75 ms-2">
+                                        <span class="text-light"><strong>Lan Anh</strong> send you a friend request.</span>
+                                        <div class="pt-1 pb-1 custom-font-size">
+                                            <span class="text-light">1 mutual friend</span>
+                                        </div>
+                                        <div class="box-btn">
+                                            <button class="btn btn-primary">Confirm</button>
+                                            <button class="btn btn-secondary">Delete</button>
+                                        </div>
+                                    </div>
+                                    <div class="position-relative d-flex align-items-center">
+                                        <div class="badge position-absolute bg-primary rounded-circle" style="width: 10px; height: 15px;"> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- drop-menu ở nút avatar -->
+
+                <div class="dropdown">
+                    <div class="avatar-navbar position-relative" style="cursor: pointer;" title="Account" data-bs-toggle="dropdown">
+                        <img src="asset/image/avatar.png" alt="" class="custom-icon-navbar">
+                        <span class="badge custom-badge p-1"><i class="bi bi-caret-down-fill"></i></span>
+                    </div>
+                    <div class="dropdown-menu custom-dropdown shadow-lg">
+                            <div class="menu-avatar custom-menu-avatar">
+                                <div class="menu-avatar__container">
+                                    <ul class="nav flex-column d-flex">
+                                        <li class="nav-item d-flex flex-row align-items-center"><img src="asset/image/avatar.png" class="custom-icon-navbar"><a href="accout.html" class="nav-link custom-link fw-bold">Hữu Bằng</a></li>
+                                        <hr class="text-light">
+                                        <li class="nav-item d-flex flex-row align-items-center"><img src="asset/image/anh-dep-23.png" class="custom-icon-navbar"><a href="#" class="nav-link custom-link fw-bold">lovely</a></li>
+                                        <li class="nav-item d-flex flex-row align-items-center mt-2"><img src="asset/image/sky.png" class="custom-icon-navbar"><a href="#" class="nav-link custom-link fw-bold">Ở Đây Có Nhạc Chill Phết</a></li>
+                                        <hr class="text-light">
+                                    </ul>
+                                    <button class="btn btn-secondary w-100 custom-bg-button"><i class="bi bi-caret-right-square-fill m-1"></i>See all profiles</button>
+                                </div>
+                                <div>
+                                    <a href="#" class="nav-link custom-link fw-bold custom-menu-settings d-flex align-items-center justify-content-between">
+                                        <i class="bi bi-gear-fill fs-4 custom-icon-navbar d-flex align-items-center justify-content-center"></i>
+                                        <span class="w-75 custom-font-size">Settings & privacy</span>
+                                        <span><i class="bi bi-chevron-compact-right"></i></span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="nav-link custom-link fw-bold custom-menu-settings d-flex align-items-center justify-content-between">
+                                        <i class="bi bi-question-circle fs-4 custom-icon-navbar d-flex align-items-center justify-content-center"></i>
+                                        <span class="w-75 custom-font-size">Help & support</span>
+                                        <span><i class="bi bi-chevron-compact-right"></i>
+                                        </span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="nav-link custom-link fw-bold custom-menu-settings d-flex align-items-center justify-content-between">
+                                        <i class="bi bi-moon fs-4 custom-icon-navbar d-flex align-items-center justify-content-center"></i>
+                                        <span class="w-75 custom-font-size">Display & accessibility</span>
+                                        <span><i class="bi bi-chevron-compact-right"></i></span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="nav-link custom-link fw-bold custom-menu-settings d-flex align-items-center">
+                                        <i class="bi bi-chat-left-text-fill fs-5 custom-icon-navbar d-flex align-items-center justify-content-center"></i>
+                                        <span class="ms-2 custom-font-size">Give feedback</span>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" class="nav-link custom-link fw-bold custom-menu-settings d-flex align-items-center">
+                                        <i class="bi bi-door-open-fill fs-5 custom-icon-navbar d-flex align-items-center justify-content-center"></i>
+                                        <span class="ms-2 custom-font-size">Log out</span>
+                                    </a>
+                                </div>
+                                <span class="text-secondary">
+                                    <strong><a href="#" class="custom-text-copyright fw-medium">Privacy</a></strong>
+                                    <span> · </span>
+                                    <strong><a href="#" class="custom-text-copyright fw-medium">Terms</a></strong>
+                                    <span> · </span>
+                                    <strong><a href="#" class="custom-text-copyright fw-medium">Advertising</a></strong>
+                                    <span> · </span>
+                                    <strong><a href="#" class="custom-text-copyright fw-medium">Ad choices</a></strong>
+                                    <span> · </span>
+                                    <strong><a href="#" class="custom-text-copyright fw-medium">Cookies</a></strong>
+                                    <span> · </span>
+                                    <strong><a href="#" class="custom-text-copyright fw-medium">Meta © 2025</a></strong>
+                                </span>
+                            </div>             
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid custom-bg-gradient">
+            <div class="container position-relative custom-profile">
+                <div class="avatar">
+                    <img src="asset/image/avatar.png" width="175px" class="custom-avatar-profile" style="cursor: pointer;">
+                </div>
+                <div class="button-edit-cover-photo">
+                    <button class="btn btn-light custom-btn-edit-cover-photo"><i class="bi bi-camera-fill"></i> Edit cover photo</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid custom-bg-container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col-md-10 d-flex justify-content-between align-items-center">
+                        <span>
+                            <p class="text-light m-3 ms-5 fs-3 mb-0 fw-bold">Hữu Bằng <span class="fw-normal">(Kenn)</span></p>
+                            <p class="text-light ms-5 fw-medium" style="color: rgb(158, 156, 156) !important">2.9k friends</p>
+                        </span>
+                        <div class="me-5">
+                            <button class="btn bg-primary text-light"><i class="bi bi-plus"></i> Add to story</button>
+                            <button class="btn bg-secondary text-light ms-2 me-2"><i class="bi bi-pencil"></i> Edit profile</button>
+                            <button class="btn bg-secondary text-light"><i class="bi bi-caret-down-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <hr class="text-light mt-3 me-5 ms-5 mb-0">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-12 col-md-8">
+                        <ul class="nav ms-5 mt-1 mb-1">
+                            <li class="nav-item rounded-2 p-2 ms-1 me-1 border-3 border-bottom border-primary"><a href="#" class="nav-link active">Posts</a></li>
+                            <li class="nav-item rounded-2 p-2 ms-1 me-1 border-3"><a href="#" class="nav-link custom-link">About</a></li>
+                            <li class="nav-item rounded-2 p-2 ms-1 me-1 border-3"><a href="#" class="nav-link custom-link">Friends</a></li>
+                            <li class="nav-item rounded-2 p-2 ms-1 me-1 border-3"><a href="#" class="nav-link custom-link">Photos</a></li>
+                            <li class="nav-item rounded-2 p-2 ms-1 me-1 border-3"><a href="#" class="nav-link custom-link">Videos</a></li>
+                            <li class="nav-item rounded-2 p-2 ms-1 me-1 border-3"><a href="#" class="nav-link custom-link">Reels</a></li>
+                            <li class="nav-item rounded-2 p-2 ms-1 me-1 border-3"><a href="#" class="nav-link custom-link"><i class="bi bi-caret-down-fill"></i> More</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex align-items-center justify-content-end me-5">
+                        <button class="custom-btn-three-dots"><i class="bi bi-three-dots"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="main__container-profile">
+                <!-- box-info -->
+                <div class="box__info pb-3">
+                    <p class="p-3 pb-0 m-0"><span class="text-light fw-bold fs-5">Intro</span></p>
+                    <div class="info__bio">
+                        <div class="bio__container">
+                            <div class="bio__title">
+                                <span class="text-light">A B C D X Y Z N M A S A D</span>
+                                <span class="text-light">----</span>
+                                <span class="text-light">học code web</span>
+                                <p><span class="text-light"><a href="https://kenn206.github.io/mocDecor.com/index.html">https://kenn206.github.io/mocDecor.com/index.html</a></span></p>
+                            </div>
+                            <div class="bio__button ms-3 me-3">
+                                <button class="btn btn-secondary w-100">Edit Bio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box__info">
+                    <div class="info__title d-flex justify-content-between">
+                        <p class="p-3 pb-0 m-0"><span class="text-light fw-bold fs-5">Photos</span></p>
+                        <p class="p-3 pb-0 m-0"><span class="fs-6"><a href="#">See All Photos</a></span></p>
+                    </div>
+                    <div class="info__image">
+                        <div class="info__container">
+                            <img class="image-info rounded-start-3" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/503684935_1093895936121251_4468640613962559921_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHYSXebIr9qD5LtalT5DUhLHdoUCcIQfNEd2hQJwhB80f3N2g4VKy3yxg1AZSY8KnAbsaoC7nxdmMPwVv_5zZjG&_nc_ohc=B5e4EEl1Q1EQ7kNvwFsssKK&_nc_oc=AdkQvsl3l7QABRA4Hfm-NWiPkcMQj-ceLM95l-KQ6FJn2fmN6PL8oz980SrUa3lf82A&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=0ukAqA3mrbA7Db6ohGmz7w&oh=00_AfSVHty39_sEp6GTUCo3JOKjFqkA_it2edYuXoootPoNMg&oe=6874540B" alt="" width="150px">
+                            <img class="image-info" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/503125800_1091984139645764_6313461564489286225_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGqgbCLPmFlp5zCgvP5WB6FTITkkG_hJAFMhOSQb-EkAd0qsTzop5ljCM7La6HeH_oQf3ZezHrPZ6at2Y98ZD52&_nc_ohc=u__zbIKL7NoQ7kNvwEGXZQI&_nc_oc=Adkp3HMFXud86977fJVqvl5GiAGgCMtNN_4TR51PmbSczeOQOJEJeRkrK_nZonGGQXs&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=jiRtQ2wqsPEemewI4dloKQ&oh=00_AfTOzGf8gYueFnEHjpVk9XcR-XPasVFGoQJf_l3MhI25_A&oe=6874540F" alt="" width="150px">
+                            <img class="image-info rounded-end-3" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/494958096_1074040048106840_4694575779488251994_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHQthh0ALOrZwOqbFyBqvVt5spYFIFjJVvmylgUgWMlW7qk1ScJugSuAtgCDJGmhAOdSEgjxQKGM_RmT_tEH-8A&_nc_ohc=Ex8L-pv2pA8Q7kNvwFdsFd3&_nc_oc=Adm8KKjdGcXlaI1Z9LNAgS1Xvn3egzNXaeR1p2ykAuhzIHbmkLMSX0LqzTz9ERf3zZM&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=Q1yVufhzdMj_aGyWQyTpNg&oh=00_AfSBAVhAVTv0xAu7OM90kLdqiGFC8A3ARWbNH2N69-T5eQ&oe=68745B41" alt="" width="150px">
+                            <img class="image-info rounded-start-3" src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/485183741_1036641578513354_634951823757737260_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeG-0nv-d1ZJamvL214ll5rsUWGb9vzhX6NRYZv2_OFfo_OOv9TGLkipbVCD5lHJLASQD0Ch7U0XvFl6nJ9bW8xZ&_nc_ohc=pxFDAp_-reUQ7kNvwGH0cMT&_nc_oc=Adks5SI6GcJW9cnhpTRNJsajdHq7F1LTo66kJoXUldDpex3MZjyPyp0ffOdhDh1W0Vo&_nc_zt=23&_nc_ht=scontent.fhan14-5.fna&_nc_gid=-7FvPQHnz-9vlPPyEHUU6Q&oh=00_AfRYfCAUjHTZwAvvkk5u7IG3T-BOSVrTgiKMzR-Dol-KJA&oe=68745FB7" alt="" width="150px">
+                            <img class="image-info" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/472079642_983490667161779_3347545366400585436_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEA7D2v0lLvqZBgjBe-g5JwVnTMl84Yrf9WdMyXzhit_yOBm0pMCJQLFwMcJWQ1zlOg5PlWofqCl5c-NNSv3_1I&_nc_ohc=u06D7KUdt4MQ7kNvwEJmPUg&_nc_oc=AdkGEYHK9ueUMUJDmxFfihFn-iUGr1lxTHYoaa5XKQfuM1ljw89bTv_3Zi7enEXg9-E&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=eeafK3T-dfNJnmtSBx80Tw&oh=00_AfTWU1wUFZ2ZlLMnTUxppNABGCWoZcwOABLZxZ0COOxetg&oe=68744F69" alt="" width="150px">
+                            <img class="image-info rounded-end-3" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/481205343_1029859299191582_559501922094257579_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGvhB5hR36xfOIegXxkLYd8J5G1QWjsBN0nkbVBaOwE3RghmeNVMp2ukgL6dtuAWIyVMA0NjPHA0yvXXCpQ7E52&_nc_ohc=AFI0hi5GCowQ7kNvwFWPqM6&_nc_oc=AdkkH79wfvERgoI8GkF5cQnthxchviDoct4iu-uGhxTIYn0nAm1F1UD7fWUAM7LO2_A&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=x1qfMbJawweKsMG1yLKnPQ&oh=00_AfToWx577hJglivbtIx-Wp1hdullJtJx-wxDaRjrV5qj_Q&oe=6874775E" alt="" width="150px">
+                            <img class="image-info rounded-start-3" src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/482061658_1029847912526054_7745177315596164726_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGYg2f1aOC8BJhXJ6zdiUvekBPP4F_X1AOQE8_gX9fUA24bxeExd3COHLsiA9_RqbMx7XqbuqeHBoc5kvMeA_D5&_nc_ohc=QGcs9pVEiyIQ7kNvwGsiL7X&_nc_oc=Adm9UmraBInNUwTFQgp21ipbyYt8u-YJwNQ1NZWV81d1_2qvrXLw0QGtKgvCBk_ZfgI&_nc_zt=23&_nc_ht=scontent.fhan14-1.fna&_nc_gid=h-Zyb8-WpzBKAy3AZHwGSw&oh=00_AfReGGcyxbMT_KhnpE91svilAXpxIcC1d2B_A8FGmiauGg&oe=68744B53" alt="" width="150px">
+                            <img class="image-info" src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/482347778_1028752729302239_4414829473939558131_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeGDEVYkRipa8kYcsv7s5SF6hTn-Hg3PTh-FOf4eDc9OHyAEinBM7g3N6O5lPuLs7gkRDVRLMGJrg88i__ctB73U&_nc_ohc=6Dz9PCpRb9YQ7kNvwHtVYL6&_nc_oc=AdlhXg-TCrfbZQf4WALgEzUZziNc8BxtWRu-_GW_qIU90EbXHOYcswNZHLu2TiG_jy0&_nc_zt=23&_nc_ht=scontent.fhan14-4.fna&_nc_gid=HLJl5nJ7wVlimp2MEuDjXw&oh=00_AfSsClAOe4A84ljCnRv4m9NQeQrsADrY8J3dzVV712PKKQ&oe=68744866" alt="" width="150px">
+                            <img class="image-info rounded-end-3" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/481459527_1027374839440028_8373248741343781526_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEUk0vrGjVTyvnsQtJXmljhJDybkOTFzOIkPJuQ5MXM4gX6eSfU5W1folC5Ws-ZdAAzARhyTWty7kQTepmXbdMh&_nc_ohc=qjA7A9EHecQQ7kNvwGTjiLM&_nc_oc=AdmqzooVd184zzomIdXLpk_b5jfxCoLf7Ul3W-lQMEtbFF5X78muCDdfyAknCeNnswE&_nc_zt=23&_nc_ht=scontent.fhan14-3.fna&_nc_gid=3K-Hp7LVkXhWhogaAmJ9Hw&oh=00_AfTKoURJIe62Kc9Rmh1Oy92ljauWj8Exz0VSY6zLjWoGVA&oe=68746880" alt="" width="150px">
+                        </div> 
+                    </div>
+                </div>
+                <div class="box__info">
+                    <div class="info__title d-flex justify-content-between">
+                        <div>
+                            <p class="p-3 pb-0 m-0"><span class="text-light fw-bold fs-5">Friends</span></p>
+                            <p class="p-3 pt-0 pb-0 m-0"><span class="text-secondary fs-6">2.915 friends</span></p>
+                        </div>
+                        <p class="p-3 pb-0 m-0"><span class="fs-6"><a href="#">See All Friends</a></span></p>
+                    </div>
+                    <div class="info__image">
+                        <div class="info__container">
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-1/482214392_1193251438976380_6594138276496074803_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=1d2534&_nc_eui2=AeE6QVXS9prOz9WSPtj-1Y7ZlsYFh3OGgWyWxgWHc4aBbEAIjERiczNuq2blHg2YilODRucoiFG2h8Al_Zd7Djux&_nc_ohc=6YltpHwJFdQQ7kNvwEJAp49&_nc_oc=Adn1gENajs5IsdvFsC4SpE9SLpQuAfIANuweNsKIRcCTE6DtQjAnZXYbrdhB_W_DlW8&_nc_zt=24&_nc_ht=scontent.fhan14-5.fna&_nc_gid=d5_XW7HHYN8me_pmQTSmNQ&oh=00_AfRpX3LXbi5XKWb7qR6gyJsKk2seRSf7dnbyf27METE2-w&oe=6874596D" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Nguyệt Nguyệt</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s148x148&_nc_cat=1&ccb=1-7&_nc_sid=40e2b2&_nc_eui2=AeHlENI6Vc41baygJDK2m-X_Wt9TLzuBU1Ba31MvO4FTUDexLwL0orZhp5LirNW8S8ujA_N3-6rzf6Z9OxudOK0l&_nc_ohc=teqbHSqcC-EQ7kNvwHI1WTC&_nc_oc=Adl_nSOVKYTHInPlfLX4_6XKU9KtljZtAveLiQ5-UKcIoJtBFaAsyN2SpKdvpcfC_8A&_nc_zt=24&_nc_ht=scontent.fhan14-4.fna&oh=00_AfQMzGEUuYLA8-8HMfmPmvzYgSzNdhaOrqosGtUcPwM-sg&oe=6895F37A" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Ngoc Anh</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-1/495520827_1126817565917266_5351291365847954518_n.jpg?stp=cp6_dst-jpg_s148x148_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7da99a&_nc_eui2=AeFQGxyUVamUUn-G0PMj5WY5vu1wBP2AvxK-7XAE_YC_EuO5PrTKT0PNQhrpPI3CDIQKG7ka_eWYG_9Spyb9IKVA&_nc_ohc=tDowAUSLBcIQ7kNvwF2WhYI&_nc_oc=AdmAURI8ay3ygrhtVFLNPjb3aXJ_3U4J6t4QBPzEhBKNATNtSjWQwCmiMZ73JnZF26w&_nc_zt=24&_nc_ht=scontent.fhan14-5.fna&_nc_gid=jDUtx9JfoALmvuTJ1v6_Fg&oh=00_AfT_V93mdsWMU1Tx9zHGjdH8hhMo_Qj7iWzIW6G7LL7rmg&oe=687445E9" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">TuNa Nguyen</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-1/515571471_1251205060066522_3868979054857620543_n.jpg?stp=c0.0.641.641a_dst-jpg_s148x148_tt6&_nc_cat=110&ccb=1-7&_nc_sid=7da99a&_nc_eui2=AeF-Fnky7fluc7I4DF__FKl-CbRiHl-9mRwJtGIeX72ZHE52PDlHroHIbU-zSB0flo1SuKwA9N9Hc-YkplE7Swyq&_nc_ohc=FUs-6GZ5aCoQ7kNvwGAp4LG&_nc_oc=AdkUVGlvH1VIoUp7YrZkz5qJeZfJRYtafp5Nn_sF-EinY27aCySYKmq_0K_Xiem4bBs&_nc_zt=24&_nc_ht=scontent.fhan14-3.fna&_nc_gid=jDUtx9JfoALmvuTJ1v6_Fg&oh=00_AfSXoFuIa0Je3ndMT-vq8PQSqB1499kyeEP0pVZzGk497g&oe=68745BED" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Nhật Vi</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s148x148&_nc_cat=1&ccb=1-7&_nc_sid=40e2b2&_nc_eui2=AeHlENI6Vc41baygJDK2m-X_Wt9TLzuBU1Ba31MvO4FTUDexLwL0orZhp5LirNW8S8ujA_N3-6rzf6Z9OxudOK0l&_nc_ohc=teqbHSqcC-EQ7kNvwHI1WTC&_nc_oc=Adl_nSOVKYTHInPlfLX4_6XKU9KtljZtAveLiQ5-UKcIoJtBFaAsyN2SpKdvpcfC_8A&_nc_zt=24&_nc_ht=scontent.fhan14-4.fna&oh=00_AfQMzGEUuYLA8-8HMfmPmvzYgSzNdhaOrqosGtUcPwM-sg&oe=6895F37A" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Thịi Hoàii</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-1/470237179_1624938188420865_8180173519618418155_n.jpg?stp=dst-jpg_s148x148_tt6&_nc_cat=106&ccb=1-7&_nc_sid=7da99a&_nc_eui2=AeGDd99tE8wJ02cIpLG_689u6im0Qlf1M1fqKbRCV_UzV5q3g-0Td9YbqwCYFm20kiuhroXbDzBClBo1I_sX0xh3&_nc_ohc=EcHr-cVP5MgQ7kNvwEl-_Q9&_nc_oc=AdlTmazY72isjdVpbBdlrSKDRk3MRWNj_odv-Dxli5fCiIPNaTEIpI2Vdem08Ju_X0U&_nc_zt=24&_nc_ht=scontent.fhan14-5.fna&_nc_gid=jDUtx9JfoALmvuTJ1v6_Fg&oh=00_AfT4r9izZ3f1JEqR6sPxIpLpQXDILHJLO-eR9rDmZkAEbw&oe=687446E2" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Đoàn Thùy Linh</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-1/480952950_1134169135151953_2979988580408030932_n.jpg?stp=dst-jpg_s148x148_tt6&_nc_cat=107&ccb=1-7&_nc_sid=7da99a&_nc_eui2=AeGXoM5dHyyMhvUqI9AoawGkImV0oPu4ur8iZXSg-7i6vwU4X254qQJoQoNMccJPDmbEq8XbAqIoEm3_3_QdwoGY&_nc_ohc=gkNlNoyoQwwQ7kNvwE_UT87&_nc_oc=Adkv9_k1L3DE05GH3Nc8B-jLj7FD_zcO_hnQ7rM_538oSCBAo6a3qCFCnITR4P8x-IM&_nc_zt=24&_nc_ht=scontent.fhan14-4.fna&_nc_gid=jDUtx9JfoALmvuTJ1v6_Fg&oh=00_AfSDkgC94RQHriJfXAb55NXmaVWct_myTjpHxffaEJ9bUw&oe=687449CB" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Gia Khải</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.30497-1/453178253_471506465671661_2781666950760530985_n.png?stp=dst-png_s148x148&_nc_cat=1&ccb=1-7&_nc_sid=40e2b2&_nc_eui2=AeHlENI6Vc41baygJDK2m-X_Wt9TLzuBU1Ba31MvO4FTUDexLwL0orZhp5LirNW8S8ujA_N3-6rzf6Z9OxudOK0l&_nc_ohc=teqbHSqcC-EQ7kNvwHI1WTC&_nc_oc=Adl_nSOVKYTHInPlfLX4_6XKU9KtljZtAveLiQ5-UKcIoJtBFaAsyN2SpKdvpcfC_8A&_nc_zt=24&_nc_ht=scontent.fhan14-4.fna&oh=00_AfQMzGEUuYLA8-8HMfmPmvzYgSzNdhaOrqosGtUcPwM-sg&oe=6895F37A" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Trần Ngọc Phương</span></p>
+                            </div>
+                            <div class="box-profile">
+                                <img class="image-info rounded-3" src="https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-1/483105220_2427778027580185_9078776634540003480_n.jpg?stp=dst-jpg_s148x148_tt6&_nc_cat=104&ccb=1-7&_nc_sid=7da99a&_nc_eui2=AeGMaygaDdrvC28nJkCsnu2XMiuF_SH4kF4yK4X9IfiQXuzUzSZHi2cA2ADP3GL4kyCcn9N2sV6P3NVc0xCYr4AM&_nc_ohc=4RquFurx43MQ7kNvwFJD9q5&_nc_oc=AdnWMj0XZqocyuUGzEvhnBFQvQGkt_xYu7adiBb0PuDeOl7sv6dWOA6lVZgQ9OgurG0&_nc_zt=24&_nc_ht=scontent.fhan14-5.fna&_nc_gid=jDUtx9JfoALmvuTJ1v6_Fg&oh=00_AfS6PH1aYvX4LAiJ_IJ0wq99P_dNzmx7qREAlp8Zsb-bQg&oe=68746148" alt="" width="150px">
+                                <p class="ps-1"><span class="text-light fs-6">Dũng Lê</span></p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <span class="text-secondary m-4">
+                    <strong><a href="#" class="custom-text-copyright fw-medium">Privacy</a></strong>
+                    <span> · </span>
+                    <strong><a href="#" class="custom-text-copyright fw-medium">Terms</a></strong>
+                    <span> · </span>
+                    <strong><a href="#" class="custom-text-copyright fw-medium">Advertising</a></strong>
+                    <span> · </span>
+                    <strong><a href="#" class="custom-text-copyright fw-medium">Ad choices</a></strong>
+                    <span> · </span>
+                    <strong><a href="#" class="custom-text-copyright fw-medium">Cookies</a></strong>
+                    <span> · </span>
+                    <strong><a href="#" class="custom-text-copyright fw-medium">Meta © 2025</a></strong>
+                </span>
+            </div>
+        </div>
+    </main>
+    <script src="asset/js/main.js"></script>
+</body>
+</html>
